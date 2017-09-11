@@ -46,7 +46,8 @@
           flex: 4;
   background-color: #F19483;
 }
-.flexcard .flexcard2 {
+
+.flexcard2 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -94,4 +95,43 @@
   -webkit-box-flex: 200px;
       -ms-flex: 200px;
           flex: 200px;
+}
+
+.flexcard5 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  /* 在未來排列圖文順序，壓縮時好用的功能 */
+}
+
+.flexcard6 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.items {
+  width: 400px;
+  height: 300px;
+  border: solid 4px black;
+  position: relative;
+}
+
+.mainAxis, .subAxis {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border: solid 2px red;
+  /*跑到中間 */
+  top: 50%;
+}
+
+.subAxis {
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  border: solid 2px blue;
 }

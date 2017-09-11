@@ -22,8 +22,8 @@
   .left
     flex: 4
     background-color: #F19483
-  .flexcard2
-    flex-direction: column
+.flexcard2
+  flex-direction: column
 .flexcard3
   width: 100%
   .left
@@ -42,4 +42,31 @@
     flex: 300px
   .right
     flex: 200px
+.flexcard5
+  flex-direction: row-reverse
+  /* 在未來排列圖文順序，壓縮時好用的功能*/
+  //.middle
+      //order: -1 
+.flexcard6
+  flex-direction: column-reverse
+.items
+  width: 400px
+  height: 300px
+  border: solid 4px black
+  position: relative
+.mainAxis,.subAxis
+  position: absolute
+  width: 100%
+  height: 0
+  border: solid 2px red
+  /*跑到中間*/
+  top: 50%
+.subAxis
+  width: 0
+  height: 100%
+  top: 0
+  left: 50%
+  border: solid 2px blue
+  
+  
   
